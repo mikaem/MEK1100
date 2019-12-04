@@ -38,7 +38,7 @@ def add_sagescript(filename):
     ff = open(filename).read()
     fl = ff.find('</title>') + 8
     ff = ff[:fl] + sage_script + ff[fl:]
-    ff = re.sub('../figs/', 'https://github.com/mikaem/MEK1100/blob/master/figs/', ff)
+    ff = re.sub('../figs/', 'https://raw.githack.com/mikaem/MEK1100/master/figs/', ff)
     fw = open(filename, 'w')
     fw.write(ff)
     fw.close()
