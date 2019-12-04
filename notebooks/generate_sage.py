@@ -1,4 +1,5 @@
 import sys
+import re
 import nbformat
 
 sage_script = """
@@ -37,6 +38,7 @@ def add_sagescript(filename):
     ff = open(filename).read()
     fl = ff.find('</title>') + 8
     ff = ff[:fl] + sage_script + ff[fl:]
+    ff = re.sub('../figs/', 'https://github.com/mikaem/MEK1100/blob/master/figs/', ff)
     fw = open(filename, 'w')
     fw.write(ff)
     fw.close()
