@@ -8,7 +8,7 @@ default:
 %.html: %.ipynb
 	@echo $(basename $@)
 	python generate_sage.py $(basename $@).ipynb
-	jupyter nbconvert $(basename $@)_sage.ipynb --TagRemovePreprocessor.remove_input_tags="['remove_input']" --to slides
+	jupyter nbconvert $(basename $@)_sage.ipynb --TagRemovePreprocessor.remove_input_tags="['remove_input']" --to slides --template slides_reveal_custom.tpl
 	python generate_sage.py $(basename $@)_sage.slides.html
 
 clean:
