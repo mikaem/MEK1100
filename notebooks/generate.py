@@ -30,15 +30,18 @@ def format_cells(filename):
                     del cell['execution_count']
                     del cell['outputs']
 
-    fb = open(filename[:-6]+'_sage.ipynb', 'w')
+    fb = open('__'+filename, 'w')
     nbformat.write(f, fb)
     fb.close()
 
-def add_sagescript(filename):
+def configure_html(filename):
     ff = open(filename).read()
     fl = ff.find('</title>') + 8
     ff = ff[:fl] + sage_script + ff[fl:]
+    # Make local figure links fetch from github
     ff = re.sub('../figs/', 'https://raw.githack.com/mikaem/MEK1100/master/figs/', ff)
+    # Rename title
+    ff = re.sub('__'+filename[:-12]+' slides', filename[:-12], ff)
     fw = open(filename, 'w')
     fw.write(ff)
     fw.close()
@@ -48,4 +51,4 @@ if __name__ == '__main__':
     if filename.endswith('ipynb'):
         format_cells(filename)
     elif filename.endswith('html'):
-        add_sagescript(filename)
+        configure_html(filename)
