@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Forelesning 1</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/reveal.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/theme/sky.css" id="theme">
+		<!--link rel="stylesheet" href="../reveal.js-3.8.0/css/reveal.css"-->
+		<!--link rel="stylesheet" href="../reveal.js-3.8.0/css/theme/sky.css" id="theme"-->
+		<link rel="stylesheet" href="../css/custom.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+				<div class="topbar">
+					<image class="logo" src="../figs/UiO_Segl_150dpi.png" width='80' style="float:left; background:none; border:none; box-shadow:none;">
+				</div>
+
+				<section>
+                    <h3>Felt i naturen, skalar- og vektorfelt, skalering</h3>
+                    
+                    <ul style='zoom: 0.8;'>
+                    <li class='fragment'><b>Pensum</b>
+                    <ul>
+                        <li>Kapittel 1 i Matthews</li>
+                        <li>Kapittel 1 i Gjevik og Fagerland</li>
+                    </ul>
+                    </li>
+                    <li class='fragment'><b>Mål</b>
+                    <ul>
+                        <li>Lære om enhetsvektorer</li>
+                        <li>Lære å addere og subtrahere vektorer, geometrisk og algebraisk</li>
+                        <li>Utforske bruk av vektorer i Geogebra </li>
+                        <li>Skalering av likninger</li>
+                    </ul>
+                    </li>
+                  
+				</section>
+
+				<section>
+					<h3>Felter</h3>
+
+                    <ul style='zoom: 0.8;'>
+                        <li>En <b>skalar</b> er en funksjon med kun én verdi</li>
+                        <li>En <b>vektor</b> er en funksjon med både størrelse og retning</li>
+                        <li>Både vektorer og skalarer er entydige funksjoner av posisjon i rommet</li>
+                    </ul>
+                    <div class='container fragment' style='zoom: 0.7;'>
+                        <div class='col'>
+                            <h4>Eksempel på skalarfelt</h4>
+                            <img src='../figs/hurrycanefloyd.png' alt='Hurrycane Floyd'>
+                        </div>
+                        <div class='col'>
+                            <h4>Eksempel på vektorfelt</h4>
+                            <img src='../figs/hurrycanefloyd.png' alt='Hurrycane Floyd'>
+                        </div>
+                    </div>
+                </section>
+                
+                <section>
+                <section>
+                    <h3>Vektorer og punkter</h3>
+                    
+                    <div class='container' style='zoom: 0.8;'>
+                        <div class='col'>
+                            Et punkt har tre koordinater i $\mathbb{R}^3$ <br />
+                            P: (x, y, z)
+                        </div>
+                        <div class='col'>
+                            En vektor har tre skalarer som vekter tre enhetsvektorer
+                            $\vec{u} = u_x \mathbf{i} + u_y \mathbf{j} + u_z \mathbf{k}$
+                        </div>
+                    </div>
+
+                    <iframe scrolling='yes' width=1000 height=400 webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" src="https://www.geogebra.org/graphing/tv7nxwmy" data-src="https://www.geogebra.org/graphing/tv7nxwmy"></iframe>
+
+                    <aside class='notes'>Vis punkter og vektorer. Endre posisjonen til en vektor og noter at den ikke endrer verdier. Vis hva en posisjonsvektor er.</aside>
+                
+                </section>
+                <section>
+                    <h3>Skalar- og vektorfelt er funksjoner av rom og tid</h3>
+
+                    <ul>
+                      <li>Et punkt P har posisjonen gitt!</li>
+                      <li>En skalar $T$ har størrelse, men ikke posisjon!</li>
+                      <li>En vektor $\vec{u}$ har størrelse og retning, men ikke posisjon!</li>
+                      <li>Derfor skriver vi $T(x,y,z), \vec{u}(x,y,z)$ <br /> 
+                        og vi må løse likninger for feltene $T$ og $\vec{u}$ i hele rommet. <br />
+                        Noen ganger også i tid $T(x,y,z,t), \vec{u}(x,y,z,t)$.</li>
+                    </ul>
+
+                </section>
+                <section>
+                    <h3>Vektor addisjon</h3>
+
+                    <div class='container'>
+                        <div class='col' width='50%'>
+                        
+                        <h4>2 dimensjoner</h4>
+                        
+                        <table style='zoom: 0.4;float:center;' >
+                            <tr>
+                            <td class="noBorder">$\vec{u}=$</td><td class="noBorder">$u_x\mathbf{i}$</td><td class="noBorder">$+ u_y \mathbf{j}$</td>
+                            </tr>
+                            <tr>
+                            <td class="noBorder">$\vec{v}=$</td><td class="noBorder">$v_x\mathbf{i}$</td><td class="noBorder">$+ v_y \mathbf{j}$</td>
+                            </tr>
+                            <tr>
+                            <td class="noBorder">$\vec{u} + \vec{v}=$</td><td class="noBorder">$(u_x+v_x)\mathbf{i}$</td><td class="noBorder">$+ (u_y+v_y)\mathbf{j}$</td>
+                            </tr>
+                        </table>
+                        </div>
+                        <div class='col' width='50%'>
+                          <a href='https://www.geogebra.org/m/qqwwpuq5'><img src='../figs/Vektoradd2d.png' width='400' style='float:right;background:none; border:none; box-shadow:none;'></a>
+                        </div>
+                    </div>
+
+                    <div class='container'>
+                        <div class='col' width='50%'>
+                           <h4>3 dimensjoner</h4>
+
+                           <table style='zoom: 0.4;'>
+                               <tr>
+                                   <td class="noBorder">$\vec{u}=$</td><td class="noBorder">$u_x\mathbf{i}$</td><td class="noBorder">$+ u_y \mathbf{j}$</td><td class="noBorder">$+ u_z \mathbf{k}$</td>
+                               </tr>
+                               <tr>
+                                   <td class="noBorder">$\vec{v}=$</td><td class="noBorder">$v_x\mathbf{i}$</td><td class="noBorder">$+ v_y \mathbf{j}$</td><td class="noBorder">$+ v_z \mathbf{k}$</td>
+                               </tr>
+                               <tr>
+                                   <td class="noBorder">$\vec{u} + \vec{v}=$</td><td class="noBorder">$(u_x+v_x)\mathbf{i}$</td><td class="noBorder">$+ (u_y+v_y)\mathbf{j}$</td><td class="noBorder">$+ (u_z+v_z)\mathbf{k}$</td>
+                               </tr>
+                           </table>
+                        </div>
+                        <div class='col' width='50%'>
+                          <a href='https://www.geogebra.org/3d/y3hagfz8'><img src='../figs/Vektoradd3d.png' width='400' style='float:right;background:none; border:none; box-shadow:none;'></a>
+                        </div>
+                    </div>
+
+                </section>
+                <section>
+                    <h4>Liten applet som viser vektor addisjon</h4>
+                    <iframe scrolling="no" title="Vektor addisjon i 2D" src="https://www.geogebra.org/material/iframe/id/udftbvwt/width/1478/height/721/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/true/ld/true/sdz/true/ctl/false" width="1478px" height="721px" style="border:0px;zoom:0.6;"> </iframe>
+                </section>
+                <section>
+                    <h3>Vektor subtraksjon</h3>
+
+                    <div class='container'>
+                        <div class='col' width='50%'>
+                        
+                        <h4>2 dimensjoner</h4>
+                        
+                        <table style='zoom: 0.4;float:center;' >
+                            <tr>
+                            <td class="noBorder">$\vec{u}=$</td><td class="noBorder">$u_x\mathbf{i}$</td><td class="noBorder">$+ u_y \mathbf{j}$</td>
+                            </tr>
+                            <tr>
+                            <td class="noBorder">$\vec{v}=$</td><td class="noBorder">$v_x\mathbf{i}$</td><td class="noBorder">$+ v_y \mathbf{j}$</td>
+                            </tr>
+                            <tr>
+                            <td class="noBorder">$\vec{u} - \vec{v}=$</td><td class="noBorder">$(u_x-v_x)\mathbf{i}$</td><td class="noBorder">$+ (u_y-v_y)\mathbf{j}$</td>
+                            </tr>
+                        </table>
+                        </div>
+                        <div class='col' width='50%'>
+                          <a href='https://www.geogebra.org/m/qqwwpuq5'><img src='../figs/Vektorsub2d.png' width='400' style='float:right;background:none; border:none; box-shadow:none;'></a>
+                        </div>
+                    </div>
+
+                    <div class='container'>
+                        <div class='col' width='50%'>
+                           <h4>3 dimensjoner</h4>
+
+                           <table style='zoom: 0.4;'>
+                               <tr>
+                                   <td class="noBorder">$\vec{u}=$</td><td class="noBorder">$u_x\mathbf{i}$</td><td class="noBorder">$+ u_y \mathbf{j}$</td><td class="noBorder">$+ u_z \mathbf{k}$</td>
+                               </tr>
+                               <tr>
+                                   <td class="noBorder">$\vec{v}=$</td><td class="noBorder">$v_x\mathbf{i}$</td><td class="noBorder">$+ v_y \mathbf{j}$</td><td class="noBorder">$+ v_z \mathbf{k}$</td>
+                               </tr>
+                               <tr>
+                                   <td class="noBorder">$\vec{u} - \vec{v}=$</td><td class="noBorder">$(u_x-v_x)\mathbf{i}$</td><td class="noBorder">$+ (u_y-v_y)\mathbf{j}$</td><td class="noBorder">$+ (u_z-v_z)\mathbf{k}$</td>
+                               </tr>
+                           </table>
+                        </div>
+                        <div class='col' width='50%'>
+                          <a href='https://www.geogebra.org/3d/y3hagfz8'><img src='../figs/Vektorsub3d.png' width='400' style='float:right;background:none; border:none; box-shadow:none;'></a>
+                        </div>
+                    </div>
+ 
+
+                </section>
+                <section>
+                    <h3>Vektor skalering</h3>
+
+                </section>
+                <section>
+                    <iframe scrolling="yes" title="Vektor addisjon i 2D" src="https://www.geogebra.org/m/jmmdrnst" width="1478px" height="721px" style="border:0px;zoom:0.6;"> </iframe>
+                    
+                </section>
+            </section>
+
+			</div>
+
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/js/reveal.js"></script>
+
+
+		<script>
+
+			Reveal.initialize({
+				history: true,
+				transition: 'linear',
+				width: '80%',
+				//height: '100%',
+				// Factor of the display size that should remain empty around the content
+				margin: 0.1,
+
+				// Bounds for smallest/largest possible scale to apply to content
+				minScale: 0.2,
+				maxScale: 1.5,
+
+				math: {
+					// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full',
+					TeX: {
+						Macros: {
+							R: '\\mathbb{R}',
+							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+						}
+					}
+				},
+
+				dependencies: [
+					{ src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/math/math.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
