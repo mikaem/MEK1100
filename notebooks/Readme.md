@@ -1,3 +1,3 @@
 Klikke på linkene for å se forelesningene:
 
-[Introduksjon](https://raw.githack.com/mikaem/MEK1100/master/html/introduksjon.slides.html)
+[Introduksjon](https://raw.githack.com/mikaem/MEK1100/master/html/introduksjon.html)
