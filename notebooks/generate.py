@@ -3,6 +3,10 @@ import re
 import nbformat
 
 sage_script = """
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
 <script>$(function () {
     // Make *any* div with class 'sagecell-sage' an executable Sage cell
@@ -39,7 +43,7 @@ def configure_html(filename):
     fl = ff.find('</title>') + 8
     ff = ff[:fl] + sage_script + ff[fl:]
     # Make local figure links fetch from github
-    ff = re.sub('../figs/', 'https://raw.githack.com/mikaem/MEK1100/master/figs/', ff)
+    #ff = re.sub('../figs/', 'https://raw.githack.com/mikaem/MEK1100/master/figs/', ff)
     # Rename title
     ff = re.sub('__'+filename[:-12]+' slides', filename[:-12], ff)
     fw = open(filename, 'w')
