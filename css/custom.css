@@ -8,6 +8,10 @@
   box-shadow: none;
 }
 
+.reveal pre {
+  box-shadow: none;
+}
+
 .sagecell_commands, .sagecell .ui-widget .sagecell_commands {
   width: 100% !important;
   height: 100% !important;
