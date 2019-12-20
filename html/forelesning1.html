@@ -12,7 +12,69 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/theme/sky.css" id="theme">
 		<!--link rel="stylesheet" href="../reveal.js-3.8.0/css/reveal.css"-->
 		<!--link rel="stylesheet" href="../reveal.js-3.8.0/css/theme/sky.css" id="theme"-->
-		<link rel="stylesheet" href="../css/custom.css">
+        
+        
+        <!-- Thebe configuration !-->
+        <!--script type="text/x-thebe-config">
+          {
+            bootstrap: true,
+            binderOptions: {
+              repo: "sagemath/sage-binder-env",
+            },
+            kernelOptions: {
+              name: "sagemath",
+            },
+        }
+        </!--script-->
+        <!--script type="text/x-thebe-config">
+            {
+              bootstrap: true,
+              selector: "pre[data-executable=true]",
+              binderOptions: {
+                repo: "binder-examples/requirements",
+              },
+              kernelOptions: {
+                name: "python3",
+              },
+            }
+          </!--script-->
+
+        <!--script src="https://unpkg.com/thebelab@latest/lib/index.js"></!--script-->
+
+
+        <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://sagecell.sagemath.org/static/sagecell_embed.css">
+        
+        <script>$(function () {
+        // Make *any* div with class 'sagecell-sage' an executable Sage cell
+        // Their results will be linked, only within language type
+        sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
+                               linked: true,
+                               editor: 'codemirror',
+                               autoeval: true,
+                               languages: ['sage'],
+                               hide: ['fullScreen', 'language'],
+                               evalButtonText: 'Evaluate'});
+        // Make *any* div with class 'compute' a Sage cell
+        sagecell.makeSagecell({inputLocation: 'div.compute',
+                               evalButtonText: 'Eval'});
+        sagecell.makeSagecell({inputLocation:  '#sagecell',
+                               evalButtonText: 'Activate'});
+        });
+        </script>
+
+        <script type="text/x-sage">
+            {
+              codeMirrorConfig: {
+                  theme: "cobolt",
+                  lineNumbers: false
+              },
+            }
+          </script>
+
+        <link rel="stylesheet" href="../css/custom.css">
+        
+        
 	</head>
 
 	<body>
@@ -20,9 +82,9 @@
 		<div class="reveal">
 
 			<div class="slides">
-				<div class="topbar">
+				<!--div class="topbar">
 					<image class="logo" src="../figs/UiO_Segl_150dpi.png" width='80' style="float:left; background:none; border:none; box-shadow:none;">
-				</div>
+				</!--div-->
 
 				<section>
                     <h3>Felt i naturen, skalar- og vektorfelt, skalering</h3>
@@ -204,10 +266,28 @@
                 
                 <section>
                     <h3>Kryss produkt</h3>
+                    <div id="sagecell"><script type="text/x-sage">
+import numpy as np
+print(np.zeros(5))
+                    </script>
+                    </div>
                 </section>
                 
-                <section>
+                <section style='position:static;'>
                     <h3>Triple produkt</h3>
+
+                    <div class='sagecell-sage'>
+                        <script type='text/x-sage'>
+import numpy as np 
+print(np.zeros(4))
+                        </script>
+                    </div>
+                    <!--pre class='thebelab-cell' data-executable="true" data-language="python">
+import numpy as np 
+import scipy as sp
+print(np.zeros(4))
+                    </!--pre-->
+                  
                 </section> 
 
                 <section>

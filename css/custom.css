@@ -1,3 +1,29 @@
+/*.sagecell-sage {
+  position: fixed;
+  top: 20%;
+  min-width: 100% !important;
+}
+*/
+
+
+.sagecell_commands, .sagecell .ui-widget .sagecell_commands {
+  width: 100% !important;
+  height: 100% !important;
+  border: 0px solid !important;
+  font-family: monospace !important;
+  font-size: 20pt !important;
+}
+
+
+.CodeMirror pre {
+  /* In CM3 this went to 4px from 0 in CM2. This sets horizontal padding only,
+    use .CodeMirror-lines for vertical */
+  padding: 0 0.4em;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
 .container {
     display: flex;
 }
@@ -105,6 +131,13 @@ table, tr, td {
     border:none !important;
     text-align-last: right;
     zoom: 1.5;
+}
+
+.alignleft {
+  border:none !important;
+  background:none !important;
+  text-align-last: left;
+  zoom: 0.7;
 }
 
 .iframe-container {
