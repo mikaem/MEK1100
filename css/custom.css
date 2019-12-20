@@ -4,7 +4,9 @@
   min-width: 100% !important;
 }
 */
-
+.sagecell-sage pre {
+  box-shadow: none;
+}
 
 .sagecell_commands, .sagecell .ui-widget .sagecell_commands {
   width: 100% !important;
