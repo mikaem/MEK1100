@@ -8,8 +8,9 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/reveal.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/theme/sky.css" id="theme">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reset.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reveal.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/black.css" id="theme">
 		<!--link rel="stylesheet" href="../reveal.js-3.8.0/css/reveal.css"-->
 		<!--link rel="stylesheet" href="../reveal.js-3.8.0/css/theme/sky.css" id="theme"-->
 		<link rel="stylesheet" href="../css/custom.css">
@@ -25,6 +26,7 @@
 				</!--div-->
 
 				<section>
+					<h3>Velkommen til</h3>
                     <h3>MEK1100 - Feltteori og Vektoranalyse</h3>
                     <h4>Våren 2020</h4>
                     <p>Foreleser: Mikael Mortensen (mikaem@math.uio.no)</p>
@@ -32,14 +34,17 @@
                   
 				</section>
 
+				<!--section data-background=white>
+					<p>https://folk.uio.no/mikaem</p>
+					<iframe width=1000 height=500 webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" src="https://folk.uio.no/mikaem" data-src="https://folk.uio.no/mikaem"></iframe>
+				</!--section-->
+
 				<section>
 					<h3> MEK1100 - litt praktisk informasjon </h3>
 					<ul>
-  						<li class='fragment'>Vi kommer til å være her, i KJM Aud 1</li>
-  						<li class='fragment'>8 åpne grupper</li>
-  						<li class='fragment'>Finn selv en gruppe du vil være med i, men prøv å fordele utover</li>
-  						<li class='fragment'>Ukesoppgaver legges ut på hjemmesiden</li>
-  						<li class='fragment'>Tillitsstudenter</li>
+  						<li class='fragment'>Gruppearbeid - 8 åpne grupper. Finn selv en gruppe du vil være med i, men prøv å fordele utover</li>
+  						<li class='fragment'>Mye oppgaveregning - ukesoppgaver legges ut på hjemmesiden</li>
+  						<li class='fragment'>Jeg trenger tillitsstudenter</li>
   						<li class='fragment'>To obligatoriske oppgaver + midtveiseksamen</li>
 					</ul>
 				</section>
@@ -65,74 +70,125 @@
 				</section>
 
 				<section>
-					<h4><span style='color:red'>MEK</span>1100 – <span style='color:blue'>Felt</span>teori og vektoranalyse</h4>
-					<p style='float:left;'><span style='color:red'>Mekanikk</span> i MEK1100</p>
-					<ul style='zoom: 0.65; float:left;'>
-					    <li> Læren om bevegelse og om krefter som kan forårsake bevegelse </li>
-					    <li> Klassisk Newtonsk fysikk $m a = \sum Krefter$ </li>
+					<h4><span style='color:red'>MEK</span>1100 – Feltteori og vektoranalyse</h4>
+					<p><span style='color:red'>Mekanikk</span> i MEK1100</p>
+					<ul>
+					    <li>Læren om bevegelse og om krefter som kan forårsake bevegelse </li>
+						<li class='fragment'>Klassisk Newtonsk fysikk: $\boxed{m \vec{a} = \sum Krefter}$ </li>
+						<li class='fragment'>Kontinuumsmekanikk!</li>
 					</ul>
-
-					<p style='float:left;'><span style='color:blue'>Felter</span> i MEK1100</p>
-				
-					<div class='container' style='float:left;'>
-					  <div class='col' style='zoom: .65;'>
-					  <ul>
-					    <li>Et felt er en størrelse entydig bestemt av posisjon og tid</li>
-					    <li class='fragment' data-fragment-index='1'><p class='fragment highlight-current-green' data-fragment-index="1">Skalarfelt:</p> 
-					        <ul>
-					            <li>Temperatur</li> 
-					            <li>Trykk</li>
-					            <li>Nedbørsmengde</li> 
-					        </ul>
-					    </li>
-					    <li class='fragment' data-fragment-index="2"><p class='fragment highlight-current-green' data-fragment-index="2">Vektorfelt:</p>
-					        <ul>
-					            <li>Vindastighet</li>
-					            <li>Magnetfelt</li>
-					        </ul>
-					     </li>
-					  </ul>
-					  </div>
-					  <div class='col' style="position:relative; width:640px; height:480px; margin:0 auto;">
-							<img class='fragment fade-in-then-out' data-fragment-index="1" src='../figs/hurrycanefloyd.png' width='350' style="position:absolute;top:0;left:0;background:none; border:none; box-shadow:none;">    
-							<img class='fragment fade-in' data-fragment-index="2" src='../figs/hurrycanefloyd.png' width='350' style="position:absolute;top:0;left:0;background:none; border:none; box-shadow:none;">    
-					  </div>
-					</div>
+					
 				</section>
 
 				<section>
+					<section>
+					<h4>MEK1100 – <span style='color:blue'>Felt</span>teori og <span style='color:blue'>vektor</span>analyse</h4>
+					<p>I MEK1100 vil det være mye snakk om skalarfelt og vektorfelt</p>
+					</section>
+				
+					<section>
+					<p style='float: left'>Fra P.C. Matthews kapittel 1:</p>
+					<ul>
+						<li class='fragment' data-fragment-index='1'>En skalar er noe som kun har størrelse og som dermed kan beskrives med ett tall</li>
+						<li class='fragment' data-fragment-index='2'>En vektor er noe som har både størrelse og retning. En vektor i rommet er beskrevet av like mange tall som det er dimensjoner.</li>
+					</ul>
+					</section>
+					<section>
+					<p style='float: left'>Fra P.C. Matthews kapittel 1:</p>
+						<ul>
+							<li class='fragment' data-fragment-index='1'>Et felt er noe (en fysisk mengde) som avhenger av posisjon</li>
+							<ul>
+							<li class='fragment' data-fragment-index='2'>Et skalarfelt er dermed noe hvis størrelse avhenger av posisjon</li>
+							<li class='fragment' data-fragment-index='2'>Et vektorfelt er noe hvis størrelse og retning avhenger av posisjon</li>
+							</ul>
+						</ul>
+					</section>
+
+					<section>
+					<h3>Skalarfelt</h3>
+					<div class='container'>
+						<div class='col'>
+							<p style='float: left'>For eksempel:</p>
+					    <ul>
+					        <li>Temperatur</li> 
+							<li>Trykk</li>
+							<li>Fart</li>
+					        <li>Nedbørsmengde</li> 
+						</ul>
+						</div>
+						<div class='col'>
+							<img src='../figs/trykk.png' width='400'> 
+							<p>Trykk</p>  
+						</div>
+					</div>
+					</section>
+					<section>
+					<h3>Vektorfelt</h3>
+					<div class='container'>
+					<div class='col'>
+						<p style='float: left'>For eksempel:</p>
+					<ul>
+					    <li>Hastighet på fluid</li>
+						<li>Magnetfelt</li>
+						<li>Elektrisk felt</li>
+						<li>Gravitasjonsfelt</li>
+					</ul>
+					</div>
+					<div class='col'>
+						<img src='../figs/trykk_og_vector.png' width='400'> 
+						<p>Trykk og hastighetsvektorer</p>   
+					</div>
+					</div>
+					</section>
+					<section>
+					<h4>Andre måter å presentere det samme</h4>
+					<div class='container'>
+						<div class='col'>
+							<img src='../figs/contours_og_vektor.png' width='300'>
+							<p>Contour plot med vektorer</p>
+						</div>
+						<div class='col'>
+							<img src='../figs/elevated.png' width='300'>
+							<p>Hevet trykk med vektorer</p>
+						</div>
+						<div class='col'>
+							<img src='../figs/stream2.png' width='300'>
+							<p>Strømlinjer farget av trykk</p>
+						</div>
+					</div>	
+					</section>
+				</section>
+
+				<section>
+					<section>
 					<h3>I MEK1100 skal vi jobbe med</h3>
 
-					<h5>Fundamentale grunnstener for likningene som beskriver den synlige delen av naturen rundt oss</h5>
-
-					<div class='container' style='zoom: 0.7; float:left;'>
-						<div class='col fragment' data-fragment-index="1">
-						<b style='float:left;'>Modellering:</b> 
-						<ul>
-							<li>Hvordan bruke feltteori for å beskrive fluider</li>
-	 				    	<li>Visulisering av felter (programmeringsverktøy)</li>
-	 				    	<li>Data-analyse - I oblig 2 skal vi analysere data fra fluidmekanikk labben</li> 
-	 				    	<li>Demonstrasjonsforsøk</li>
-							<li>Numerisk beregning av felt</li>
-						</ul>
-						</div>
-						<div class='col fragment' data-fragment-index="2">
-						<b style='float:left;'>Matematikk:</b>
-						<ul>
-							<li> En praktisk anvendelse av det du lærer om i MAT1110</li>
-							<li>Partielle deriverte og differensiallikninger</li> 
-							<li>Linje-, flate- og volumintegraler</li>
-							<li>Gradienter av felter $\nabla \beta(x,y,z)$</li>
-							<li>Divergens av felter $\nabla \cdot \mathbf{u}(x, y, z)$</li>
-							<li>Kryss-produkter $\mathbf{a} \times \mathbf{b}$</li>
-							<li>Virvling (curl) $\nabla \times \mathbf{u}$</li>
-						</ul>
-						</div>
-					</div>
-
-				</section>
-
-				<section>
+					<p>Fundamentale grunnstener for likningene som beskriver den synlige delen av naturen rundt oss</p>
+					</section>
+				
+					<section>
+					<h3>Modellering</h3>
+					<ul>
+						<li class='fragment'>Hvordan bruke feltteori for å beskrive fluider</li>
+						<li class='fragment'>Visulisering av felter (programmeringsverktøy)</li>
+						<li class='fragment'>Data-analyse - I oblig 2 skal vi analysere data fra fluidmekanikk labben</li> 
+						<li class='fragment'>Demonstrasjonsforsøk</li>
+						<li class='fragment'>Numerisk beregning av felt</li>
+					</ul>
+					</section>
+					<section>
+					<h3>Matematikk</h3>
+					<h4>En praktisk anvendelse av MAT1110</h4>
+					<ul>
+						<li class='fragment'>Partielle deriverte og differensiallikninger</li> 
+						<li class='fragment'>Linje-, flate- og volumintegraler</li>
+						<li class='fragment'>Gradienter av felter $\nabla \beta(x,y,z)$</li>
+						<li class='fragment'>Divergens av felter $\nabla \cdot \mathbf{u}(x, y, z)$</li>
+						<li class='fragment'>Kryss-produkter $\mathbf{a} \times \mathbf{b}$</li>
+						<li class='fragment'>Virvling (curl) $\nabla \times \mathbf{u}$</li>
+					</ul>
+					</section>
+				
 					<section>
 				    	<h2>For eksempel turbulens</h2>
 						<img src="https://cdn.jsdelivr.net/gh/spectralDNS/spectralutilities@master/movies/isotropic300_12.gif" width="600" height="400" alt="Isotropic turbulence"/>
@@ -140,7 +196,7 @@
 					<section>
 						<img src="https://cdn.jsdelivr.net/gh/spectralDNS/spectralutilities@master/movies/isotropic300_12.gif" width="450" height="300" alt="Isotropic turbulence"/>
 
-						<h3>Navier Stokes</h3>
+						<h4>Beskrevet av Navier Stokes´ likninger</h4>
 
 						\[\begin{align*}
 						  \frac{\partial \vec{u}}{\partial t} + \nabla \cdot \vec{u} \vec{u} &= -\frac{1}{\rho}\nabla p + \nu \nabla^2 \vec{u} \\
@@ -165,27 +221,25 @@
 						<div class='container' style='zoom: 0.65;'>
 						    <div class='col'>
 						      <ul>
-						          <li>$\color{green}{\frac{\partial \vec{u}}{\partial t}\text{ - Partiell tidsderivert}}$</li>
+						          <li>$\color{green}{\frac{\partial \vec{u}}{\partial t}}\text{ - Partiell tidsderivert}$</li>
 						          <li>$\color{blue}{\nabla \cdot \vec{u}} \text{ - Divergens av vektor}$</li>
-						          <li>$\color{red}{\nabla p \text{ - Gradient av skalar}}$</li>
+						          <li>$\color{red}{\nabla p} \text{ - Gradient av skalar}$</li>
 						      </ul>
 						     </div>
 						    <div class='col'>
 						        <ul>
-						            <li>$\color{magenta}{\nabla \cdot \vec{u} \vec{u}}\text{ - Divergens av ytre produkt}$ <br /> $\color{magenta}{\text{mellom to vektorer}}$</li>
-						            <li>$\color{gray}{\nu \nabla^2 \vec{u}\left(= \nu\nabla \cdot \nabla \vec{u} \right)\text{ - Divergens av}}$ <br /> $\color{gray}{\text{gradient av vektor}}$</li>
+						            <li>$\color{magenta}{\nabla \cdot \vec{u} \vec{u}}\text{ - Divergens av ytre produkt}$ <br /> $\text{mellom to vektorer}$</li>
+						            <li>$\color{gray}{\nu \nabla^2 \vec{u}\left(= \nu\nabla \cdot \nabla \vec{u} \right)}\text{ - Divergens av}$ <br /> $\text{gradient av vektor}$</li>
 						        </ul>
 						    </div>
 						</div>
 
 					</section>
 
-				</section>
-
-				<section>
 					<section>
 						<h3>Eller Rayleigh-Bénard konveksjon</h3>
 						<img src="https://cdn.jsdelivr.net/gh/spectralDNS/spectralutilities@master/movies/RB_200k_small.png" width="600" height="400" alt="Rayleigh-Bénard flow"/>
+						<p>Temperatur mellom to plater som holdes ved forskjellig temperatur</p>
 					</section>
 					<section>
 						<img src="https://cdn.jsdelivr.net/gh/spectralDNS/spectralutilities@master/movies/RB_200k_small.png" width="450" height="300" alt="Isotropic turbulence"/></center>
@@ -203,7 +257,7 @@
 				</section>
 
 				<section>
-					<section>
+					<section data-background=white>
 					<h3>Programmeringsverktøy</h3>
 					
 					<div class='container'>
@@ -224,6 +278,7 @@
 					</section>
 
 				</section>
+
 				<section>
 					<h3>Spørsmål?</h3>
 					<iframe width=1000 height=500 webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" src="https://www.mentimeter.com/s/4d5eda11ba0617ce78c841db7e340b9c/9d51e96be118" data-src="https://www.mentimeter.com/s/4d5eda11ba0617ce78c841db7e340b9c/9d51e96be118"></iframe>
@@ -239,8 +294,15 @@
 		<script>
 
 			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
 				history: true,
-				transition: 'linear',
+				//transition: 'linear',
+
 				//width: '80%',
 				//height: '100%',
 				// Factor of the display size that should remain empty around the content
@@ -266,11 +328,16 @@
 				},
 
 				dependencies: [
-					{ src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/math/math.js', async: true }
+					{ src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/math/math.js', async: true },
+					{ src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/highlight/highlight.js', async: true },
+					{ src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/search/search.js', async: true },
+					{ src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/notes/notes.js', async: true }
 				]
 			});
 
 		</script>
-
 	</body>
 </html>
