@@ -42,6 +42,7 @@
 
         <!--script src="https://unpkg.com/thebelab@latest/lib/index.js"></!--script-->
 
+
         <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
         <link rel="stylesheet" type="text/css" href="https://sagecell.sagemath.org/static/sagecell_embed.css">
         
@@ -618,6 +619,33 @@
                 <iframe scrolling="no" title="Derivasjon av posisjonsvektor" src="https://www.geogebra.org/material/iframe/id/aammuceg/width/800/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/true/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="800px" height="400px" style="border:0px;"> </iframe>
                 </section>
 
+                <section>
+                    <h4>Eksempel - partikkel som skytes i tyngdefeltet</h4>
+                    <p>Startfart = $v_0$ og retning $\alpha$ med x-axen</p>
+                    <div class='container'>
+                        <div class='col' style='zoom:0.8'>
+                            $
+                            \begin{split}
+                            \vec{r} &= (x, y) \\
+                             x &= v_0 \cos (\alpha) t \\
+                             y &= v_0 \sin (\alpha) t - \frac{1}{2}t^2 \\
+                             \vec{v} &= \frac{d \vec{r}}{dt}
+                             \end{split}
+                            $
+                        </div>
+                        <div class='col'>
+                            <img src='../figs/partikkelskytes.png' width=500>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <a href='https://www.geogebra.org/classic/pamdza65' target='_blank'>
+                        <h4>Partikkel som skytes i tyngdefeltet</h4>
+                    </a>
+                    <p>Eksempel fra GF 1.4</p>
+                    <iframe scrolling="no" title="Eksempel med partikkel som skytes" src="https://www.geogebra.org/material/iframe/id/pamdza65/width/800/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/true/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="800px" height="500px" style="border:0px;"> </iframe>
+                </section>
+
             </section>
 
             <section>
@@ -659,7 +687,6 @@ print(np.zeros(4))
 			</div>
 
         </div>
-        
         
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/js/reveal.js"></script>
 
