@@ -447,9 +447,9 @@
                     \red{\mathbf{i}} \times \green{\mathbf{j}} &= \blue{\mathbf{k}}\\
                     \blue{\mathbf{k}} \times \red{\mathbf{i}} &= \green{\mathbf{j}}\\
                     \green{\mathbf{j}} \times \blue{\mathbf{k}} &= \red{\mathbf{i}} \\
-                    \red{\vec{\mathbf{i}}} \times \red{\mathbf{i}} &= 0 \\
-                    \green{\vec{\mathbf{j}}} \times \green{\mathbf{j}} &= 0 \\
-                    \blue{\vec{\mathbf{k}}} \times \blue{\mathbf{k}} &= 0
+                    \red{{\mathbf{i}}} \times \red{\mathbf{i}} &= 0 \\
+                    \green{{\mathbf{j}}} \times \green{\mathbf{j}} &= 0 \\
+                    \blue{{\mathbf{k}}} \times \blue{\mathbf{k}} &= 0
                     \end{align*}
                         $
                         </div>
@@ -568,9 +568,56 @@
                 </section>
 
                 <section>
+                    <h3>Sammendrag av forrige slide</h3>
+                    <ul>
+                    <li class='fragment'>To vektorer $\vec{u}$ og $\vec{v}$ i $\mathbb{R}^3$ spenner ut et plan</li>
+                    <li class='fragment'>Kryssproduktet gir en ny vektor $\vec{a}$ med retning normal til planet<br>
+                     <center>$\vec{a} = \vec{u} \times \vec{v}$</center></li>
+                    <li class='fragment'>En enhetsvektor $\vec{n}_a$ med lengde 1 og samme retning som $\vec{a}$ skapes med<br>
+                     <center>$\vec{n}_a = \frac{\vec{a}}{|\vec{a}|}$</center></li>
+                    </ul>
+                </section>
+
+                <section>
                     <h3>Rotasjon av fast legeme</h3>
 
                 </section>
+
+            </section>
+
+            <section>
+                <section>
+                <h3>Derivasjon av vektorer</h3>
+                <p>Også komponentvis</p>
+                $
+                \begin{split}
+                \frac{d \vec{u}}{dt} &= \frac{d}{dt}\left(\red{u_x \mathbf{i}} + \green{u_y \mathbf{j}} +\blue{u_z \mathbf{k}} \right) \\
+                                     &= \frac{d u_x}{dt} \red{\mathbf{i}} + \frac{d u_y}{dt} \green{\mathbf{j}} + \frac{d u_z}{dt} \blue{\mathbf{k}}
+                \end{split}
+                $
+                <p>Siden enhetsvektorene er <u>uavhengige av tid</u></p>
+                </section>
+
+                <section>
+                <a href='https://www.geogebra.org/classic/gnnkn7dw' target='_blank'>
+                    <h3>Liten repetisjon av derivasjon</h3>
+                    
+                    $\frac{d f(x)}{dx}  \underset{\Delta x \to 0}{\approx} \frac{f(x+\Delta x) - f(x)}{\Delta x}$
+                    </a>
+                    <p></p>
+                    <iframe scrolling="no" title="Derivasjon av funksjon" src="https://www.geogebra.org/material/iframe/id/gnnkn7dw/width/800/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/true/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="800px" height="400px" style="border:0px;"> </iframe>
+                    
+                </section>
+
+                <section>
+                    <h4>Derivasjon av posisjonsvektor</h4>
+                <a href='https://www.geogebra.org/classic/aammuceg' target='_blank'>
+                $\vec{v} = \frac{d \vec{r}(t)}{dt}  \underset{\Delta t \to 0}{\approx} \frac{\vec{r}(t+\Delta t) - \vec{r}(t)}{\Delta t}$
+                </a>
+                <p></p>
+                <iframe scrolling="no" title="Derivasjon av posisjonsvektor" src="https://www.geogebra.org/material/iframe/id/aammuceg/width/800/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/true/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="800px" height="400px" style="border:0px;"> </iframe>
+                </section>
+
             </section>
 
             <section>
