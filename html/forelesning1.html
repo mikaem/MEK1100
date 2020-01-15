@@ -11,58 +11,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reset.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reveal.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/black.css" id="theme">
-		<!--link rel="stylesheet" href="../reveal.js-3.8.0/css/reveal.css"-->
-		<!--link rel="stylesheet" href="../reveal.js-3.8.0/css/theme/sky.css" id="theme"-->
-        
-        
-        <!-- Thebe configuration !-->
-        <!--script type="text/x-thebe-config">
-          {
-            bootstrap: true,
-            binderOptions: {
-              repo: "sagemath/sage-binder-env",
-            },
-            kernelOptions: {
-              name: "sagemath",
-            },
-        }
-        </!--script-->
-        <!--script type="text/x-thebe-config">
-            {
-              bootstrap: true,
-              selector: "pre[data-executable=true]",
-              binderOptions: {
-                repo: "binder-examples/requirements",
-              },
-              kernelOptions: {
-                name: "python3",
-              },
-            }
-          </!--script-->
-
-        <!--script src="https://unpkg.com/thebelab@latest/lib/index.js"></!--script-->
-
-
-        <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
-        <link rel="stylesheet" type="text/css" href="https://sagecell.sagemath.org/static/sagecell_embed.css">
-        
-        <script>$(function () {
-        // Make *any* div with class 'sagecell-sage' an executable Sage cell
-        // Their results will be linked, only within language type
-        sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
-                               linked: true,
-                               editor: 'codemirror',
-                               autoeval: true,
-                               languages: ['sage'],
-                               hide: ['fullScreen', 'language'],
-                               evalButtonText: 'Evaluate'});
-        // Make *any* div with class 'compute' a Sage cell
-        sagecell.makeSagecell({inputLocation: 'div.compute',
-                               evalButtonText: 'Eval'});
-        sagecell.makeSagecell({inputLocation:  '#sagecell',
-                               evalButtonText: 'Activate'});
-        });
-        </script>
+       
 
         <link rel="stylesheet" href="../css/custom.css">
         
@@ -74,9 +23,6 @@
 		<div class="reveal">
 
 			<div class="slides">
-				<!--div class="topbar">
-					<image class="logo" src="../figs/UiO_Segl_150dpi.png" width='80' style="float:left; background:none; border:none; box-shadow:none;">
-				</!--div-->
 
 				<section>
                     <h3>Felt i naturen, skalar- og vektorfelt, skalering</h3>
@@ -98,35 +44,9 @@
                   
 				</section>
 
-				<section>
-                    <section>
-					<h3>Felter</h3>
-
-                    <p style='float: left'>Fra P.C. Matthews kapittel 1:</p>
-						<ul>
-							<li>Et felt er noe (en fysisk mengde) som avhenger av posisjon</li>
-							<ul>
-							<li>Et skalarfelt er dermed noe hvis størrelse avhenger av posisjon</li>
-							<li>Et vektorfelt er noe hvis størrelse og retning avhenger av posisjon</li>
-							</ul>
-						</ul>
-                    </section>
-                    <section>
-                    <div class='container' style='zoom: 0.7;'>
-                        <div class='col'>
-                            <h4>Eksempel på skalarfelt</h4>
-                            <img src='../figs/trykk.png' alt='Trykk'>
-                        </div>
-                        <div class='col'>
-                            <h4>Eksempel på vektorfelt</h4>
-                            <img src='../figs/trykk_og_vector.png' alt='Trykk+vektorer'>
-                        </div>
-                    </div>
-                    </section>
-                </section>
                 <section>
                     <section>
-                    <h3>Vektorer og punkter - 2D</h3>
+                    <a href='https://www.geogebra.org/classic/mcqgpwnp' target='_blank'><h3>Vektorer og punkter - 2D</h3></a>
                     
                     <div class="container" style='zoom:0.8'>
                         <div class="col">
@@ -142,12 +62,12 @@
                             </p>
                         </div>
                     </div>
-                    <iframe scrolling="no" title="Punkt og Vektor" src="https://www.geogebra.org/material/iframe/id/rgjwpngv/width/500/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="500px" height="400px" style="border:0px;"> </iframe>
+                    <iframe scrolling="no" title="Punkt og Vektor" data-src="https://www.geogebra.org/material/iframe/id/rgjwpngv/width/500/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="500px" height="400px" style="border:0px;"> </iframe>
                     
                     <aside class='notes'>Vis punkter og vektorer. Endre posisjonen til en vektor og noter at den ikke endrer verdier. Vis hva en posisjonsvektor er.</aside>
                     </section> 
                     <section>
-                        <h3>Vektorer og punkter - 3D</h3>
+                        <a href='https://www.geogebra.org/classic/wvqvqabh' target='_blank'><h3>Vektorer og punkter - 3D</h3></a>
                         
                         <div class="container" style='zoom:0.8'>
                             <div class="col">
@@ -163,25 +83,26 @@
                                 </p>
                             </div>
                         </div>
-                            <iframe scrolling="no" title="punkt og vektor i 3d" src="https://www.geogebra.org/material/iframe/id/zftfanuf/width/500/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="500px" height="400px" style="border:0px;"> </iframe>    
+                            <iframe scrolling="no" title="punkt og vektor i 3d" data-src="https://www.geogebra.org/material/iframe/id/zftfanuf/width/500/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="500px" height="400px" style="border:0px;"> </iframe>    
                         
                         <aside class='notes'>Vis punkter og vektorer. Endre posisjonen til en vektor og noter at den ikke endrer verdier. Vis hva en posisjonsvektor er.</aside>
                     </section>
-                </section>
-                <section>
-                        <h3>Posisjonsvektor vs vanlig</h3>
+                    <section>
+                        <a href='https://www.geogebra.org/classic/adu4kzkk' target='_blank'><h3>Posisjonsvektor vs vanlig</h3></a>
                         <div class='container' style='zoom:0.8'>
                             <div class='col'>
                         <p>En posisjonsvektor starter <br>alltid i origo<br>
-                           <center>$\vec{r} = x \mathbf{i} + y \mathbf{j} + z \mathbf{k}$</center></p>
+                           <center>$\vec{r} = x \red{\mathbf{i}} + y \green{\mathbf{j}} + z \blue{\mathbf{k}}$</center></p>
                         </div>
                         <div class='col'>
                         <p>En vanlig vektor er en <br>funksjon av posisjon<br>
-                           <center>$\vec{u}(x,y,z) = u_x \mathbf{i} + u_y \mathbf{j} + u_z \mathbf{k}$</center></p>
+                           <center>$\vec{u}(x,y,z) = u_x \red{\mathbf{i}} + u_y \green{\mathbf{j}} + u_z \blue{\mathbf{k}}$</center></p>
                         </div>
                         </div>
-                        <iframe scrolling="no" title="positionvector" src="https://www.geogebra.org/material/iframe/id/adu4kzkk/width/500/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/false/sdz/true/ctl/false" width="500px" height="400px" style="border:0px;"> </iframe>
+                        <iframe scrolling="no" title="positionvector" data-src="https://www.geogebra.org/material/iframe/id/adu4kzkk/width/500/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/false/sdz/true/ctl/false" width="500px" height="400px" style="border:0px;"> </iframe>
+                    </section>
                 </section>
+                
                     
                     <!--section>
                     <h3>Skalar- og vektorfelt er funksjoner av rom og tid</h3>
@@ -203,7 +124,7 @@
                     <div class="grid-container">
                         <div>
                         
-                        <h4>2 dimensjoner</h4>
+                        <a href='https://geogebra.org/classic/d7sdfufw' target='_blank'><h4>2 dimensjoner</h4></a>
                         
                         <table style='zoom:0.7;float:center;' >
                             <tr>
@@ -218,13 +139,11 @@
                         </table>
                         </div>
                         <div>
-                            <!--a href='https://www.geogebra.org/m/qqwwpuq5'><img src='../figs/Vektoradd2d.png' width='600' style='float:right;background:none; border:none; box-shadow:none;'></!--a-->
-                            <iframe target='_blank' scrolling="yes" title="Vektoradd2" src="https://www.geogebra.org/material/iframe/id/d7sdfufw/width/500/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/true/sdz/true/ctl/true" width="500px" height="400px" style="border:0px;"> </iframe>
-                            <!--iframe scrolling="no" title="Vektoradd2" src="https://www.geogebra.org/material/iframe/id/d7sdfufw/width/500/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/false/sdz/true/ctl/false" width="500px" height="400px" style="border:0px;"> </!--iframe-->
+                            <iframe target='_blank' scrolling="yes" title="Vektoradd2" data-src="https://www.geogebra.org/material/iframe/id/d7sdfufw/width/500/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/true/sdz/true/ctl/false" width="500px" height="400px" style="border:0px;"> </iframe>
                             
                         </div>
                         <div>
-                            <h4>3 dimensjoner</h4>
+                            <a href='https://geogebra.org/classic/y3hagfz8' target='_blank'><h4>3 dimensjoner</h4></a>
  
                             <table style='zoom:0.7;'>
                                 <tr>
@@ -240,7 +159,7 @@
                          </div>
                     
                         <div>
-                          <iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" scrolling="no" title="Vektoradd3d" src="https://www.geogebra.org/material/iframe/id/y3hagfz8/width/500/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/true/sdz/true/ctl/true" width="500px" height="400px" style="border:0px;"> </iframe>
+                          <iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" scrolling="no" title="Vektoradd3d" data-src="https://www.geogebra.org/material/iframe/id/y3hagfz8/width/500/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/true/sdz/true/ctl/false" width="500px" height="400px" style="border:0px;"> </iframe>
                         </div>
                     </div>
 
@@ -251,7 +170,7 @@
                     <div class="grid-container">
                         <div>
                         
-                        <h4>2 dimensjoner</h4>
+                        <a href='https://geogebra.org/classic/szshemcc' target='_blank'><h4>2 dimensjoner</h4></a>
                         
                         <table style='zoom:0.7;float:center;' >
                             <tr>
@@ -267,11 +186,11 @@
                         </div>
                         <div>
                             <!--a href='https://www.geogebra.org/m/qqwwpuq5'><img src='../figs/Vektoradd2d.png' width='600' style='float:right;background:none; border:none; box-shadow:none;'></!--a-->
-                            <iframe scrolling="no" title="Vektorsub2" src="https://www.geogebra.org/material/iframe/id/szshemcc/width/500/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/false/sdz/true/ctl/false" width="500px" height="400px" style="border:0px;"> </iframe>
+                            <iframe scrolling="no" title="Vektorsub2" data-src="https://www.geogebra.org/material/iframe/id/szshemcc/width/500/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/false/sdz/true/ctl/false" width="500px" height="400px" style="border:0px;"> </iframe>
                             
                         </div>
                         <div>
-                            <h4>3 dimensjoner</h4>
+                            <a href='https://geogebra.org/classic/cwyczdya' target='_blank'><h4>3 dimensjoner</h4></a>
  
                             <table style='zoom:0.7;'>
                                 <tr>
@@ -287,14 +206,24 @@
                          </div>
                     
                         <div>
-                            <iframe scrolling="no" title="Vektorsub3d" src="https://www.geogebra.org/material/iframe/id/cwyczdya/width/500/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/false/sdz/true/ctl/false" width="500px" height="400px" style="border:0px;"> </iframe>
+                            <iframe scrolling="no" title="Vektorsub3d" data-src="https://www.geogebra.org/material/iframe/id/cwyczdya/width/500/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/false/sdz/true/ctl/false" width="500px" height="400px" style="border:0px;"> </iframe>
                         </div>
                     </div>
 
                 </section>
                 <section>
                     <h4>Vektor algebra er komponentvis</h4>
-                    <table style='zoom: 1;'>
+                    $
+                    \begin{align*}
+                    \begin{pmatrix}{\red{u_x} \\ \green{u_y} \\ \blue{u_z}}\end{pmatrix} + \begin{pmatrix}{\red{v_x} \\ \green{v_y} \\ \blue{v_z}}\end{pmatrix} &= \begin{pmatrix}\red{u_x + v_x} \\ \green{u_y + v_y} \\ \blue{u_z + v_z} \end{pmatrix} \\
+                    \end{align*}
+                    $
+                    $
+                    \begin{align*}
+                    \begin{pmatrix}{\red{u_x} \\ \green{u_y} \\ \blue{u_z}}\end{pmatrix} - \begin{pmatrix}{\red{v_x} \\ \green{v_y} \\ \blue{v_z}}\end{pmatrix} &= \begin{pmatrix}\red{u_x - v_x} \\ \green{u_y - v_y} \\ \blue{u_z - v_z} \end{pmatrix} \\
+                    \end{align*}
+                    $
+                    <!--table-- style='zoom: 1;'>
                         <tr>
                             <td class='noBorder'>$\vec{u}$</td>
                             <td class='noBorder'>$+$</td> 
@@ -310,35 +239,24 @@
                             <td class='noBorder' style='transform: rotate(-45deg);'>$\longrightarrow$</td> 
                         </tr>
                         <tr style="border-bottom:1px solid">
-                            <td class='noBorder'>$\binom{1}{1}$</td>
+                            <td class='noBorder'>$\binom{\red{1}}{\green{1}}$</td>
                             <td class='noBorder'>$+$</td>
-                            <td class='noBorder'>$\binom{1}{1}$</td>
+                            <td class='noBorder'>$\binom{\red{1}}{\green{1}}$</td>
                             <td class='noBorder'>$=$</td>
-                            <td class='noBorder'>$\binom{2}{2}$</td>
-                        </tr>
-                        <tr>
-                            <td class='noBorder'>$\vec{u}$</td>
-                            <td class='noBorder'>$-$</td> 
-                            <td class='noBorder'>$\vec{u}$</td>
-                            <td class='noBorder'>$=$</td>
-                            <td class='noBorder'>$0\vec{u}$</td>
-                        </tr>
-                        <tr> 
-                            <td class='noBorder' style='transform: rotate(-45deg);'>$\rightarrow$</td> 
-                            <td class='noBorder'>$-$</td>
-                            <td class='noBorder' style='transform: rotate(-45deg);'>$\rightarrow$</td> 
-                            <td class='noBorder'>$=$</td>
-                            <td class='noBorder' style='float:center'>$0$</td> 
-                        </tr>
-                        <tr>
-                            <td class='noBorder'>$\binom{1}{1}$</td>
-                            <td class='noBorder'>$-$</td>
-                            <td class='noBorder'>$\binom{1}{1}$</td>
-                            <td class='noBorder'>$=$</td>
-                            <td class='noBorder'>$\binom{0}{0}$</td>
+                            <td class='noBorder'>$\binom{\red{2}}{\green{2}}$</td>
                         </tr>
                     </table>
+                    <table>
+                        <tr>
+                            <td class='noBorder'>$\underbrace{(\red{1 \mathbf{i}} +\green{1 \mathbf{j}})}_{\vec{u}}$</td>
+                            <td class='noBorder'>$+$</td> 
+                            <td class='noBorder'>$\underbrace{(\red{1 \mathbf{i}} + \green{1 \mathbf{j}})}_{\vec{u}}$</td>
+                            <td class='noBorder'>$=$</td>
+                            <td class='noBorder'>$\underbrace{(\red{2 \mathbf{i}} + \green{2 \mathbf{j}})}_{2\vec{u}}$</td>
+                        </tr>
+                    </!--table-->
                 </section>
+            
             </section>
 
             <section>
@@ -347,24 +265,37 @@
                     <p>En vektor skaleres komponentvis</p>
                     $
                     \begin{align*}
-                    \alpha \vec{u} &= \alpha(u_x \mathbf{i} + u_y \mathbf{j} +u_z \mathbf{k}) \\
-                                   &= (\alpha u_x \mathbf{i} + \alpha u_y \mathbf{j} + \alpha u_z \mathbf{k})
+                    \alpha \vec{u} &= \alpha(u_x \red{\mathbf{i}} + u_y \green{\mathbf{j}} +u_z \blue{\mathbf{k}}) \\
+                                   &= (\alpha u_x \red{\mathbf{i}} + \alpha u_y \green{\mathbf{j}} + \alpha u_z \blue{\mathbf{k}})
                     \end{align*}
                     $
                     <p>På matriseform</p>
                     $\alpha \begin{pmatrix}{u_x \\ u_y \\ u_z}\end{pmatrix} = \begin{pmatrix}{\alpha u_x \\ \alpha u_y \\ \alpha u_z}\end{pmatrix}$
                 </section>
                 <section>
-                    <h3>Vektor skalering endrer størrelsen, ikke retningen</h3>
-                    <iframe scrolling="no" title="Skalering 2D" src="https://www.geogebra.org/material/iframe/id/j9uatjd9/width/500/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/false/sdz/true/ctl/false" width="500px" height="400px" style="border:0px;"> </iframe>
+                    <a href='https://geogebra.org/classic/scshytdn' target='_blank'><h3>Vektor skalering endrer størrelsen, ikke retningen</h3></a>
+                    <iframe scrolling="no" title="Skalering 2D" data-src="https://www.geogebra.org/material/iframe/id/j9uatjd9/width/500/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/false/sdz/true/ctl/false" width="500px" height="400px" style="border:0px;"> </iframe>
                     <div class='fragment' style='zoom:0.4'>(ok, kan endre til motsatt retning da)</div>
+                </section>
+                <section>
+                    <h3>Fart og hastighet</h3>
+                    <div class='container'>
+                        <div class='col'>
+                            <p>Fart er en skalar lik lengden av hastighetsvektoren</p>
+                            <p>Fart = $|\vec{u}|$</p>
+                        </div>
+                        <div class='col'>
+                            <img data-src='../figs/trykk_og_vector.png' width='400'>
+                        </div>
+
+                    </div>
                 </section>
             </section>
 
             <section>
                 <section>
                     <h3>Skalarprodukt</h3>
-                    <p>Skalarproduktet (prikkprodukt, dot product) mellom to vektorer gir en skalar</p>
+                    <p>Skalarproduktet (prikk-produkt, dot product) mellom to vektorer gir en skalar</p>
                     $
                     \begin{align*}
                     \vec{u} \cdot \vec{v} &= u_x v_x + u_y v_y + u_z v_z \\
@@ -401,50 +332,67 @@
                         $
                         </div>
                         <div class='col'>
-                        <iframe scrolling="no" title="pythagoras" src="https://www.geogebra.org/material/iframe/id/srgvwas3/width/500/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="500px" height="400px" style="border:0px;"> </iframe>    
+                        <iframe scrolling="no" title="pythagoras" data-src="https://www.geogebra.org/material/iframe/id/srgvwas3/width/500/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="500px" height="400px" style="border:0px;"> </iframe>    
                         </div>    
                     </div>
                 </section>
                 <section>
-                    <h3>Geometrisk tolkning</h3>
-                    <iframe scrolling="no" title="Skalarprodukt løsning" src="https://www.geogebra.org/material/iframe/id/dnvjedrz/width/600/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/false/sdz/true/ctl/false" width="600px" height="400px" style="border:0px;"> </iframe>
+                    <a href='https://geogebra.org/classic/dnvjedrz' target='_blank'><h4>Geometrisk tolkning $\mathbf{a} \cdot \mathbf{b}$</h4></a>
+                    <iframe scrolling="no" title="Skalarprodukt løsning" data-src="https://www.geogebra.org/material/iframe/id/dnvjedrz/width/600/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/false/sdz/true/ctl/false" width="600px" height="400px" style="border:0px;"> </iframe>
                     <p>Lengden av <b>a</b> ganger lengden av <b>b</b> i retning av <b>a</b></p>
                 </section>
                 <section>
-                    <h3>Geometrisk tolkning</h3>
-                    <iframe scrolling="no" title="Skalarprodukt løsning a på b" src="https://www.geogebra.org/material/iframe/id/aedafrfp/width/600/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="600px" height="400px" style="border:0px;"> </iframe>
+                    <a href='https://geogebra.org/classic/aedafrfp' target='_blank'><h4>Alternativ geometrisk tolkning $\mathbf{a} \cdot \mathbf{b}$</h4></a>
+                    <iframe scrolling="no" title="Skalarprodukt løsning a på b" data-src="https://www.geogebra.org/material/iframe/id/aedafrfp/width/600/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="600px" height="400px" style="border:0px;"> </iframe>
                     <p>Lengden av <b>b</b> ganger lengden av <b>a</b> i retning av <b>b</b></p>
                 </section>
             </section>
         
             <section>
-                <a href='https://www.geogebra.org/classic/kvwwgesx' target='_blank'><h3>Likning for et plan</h3></a>
-                $\mathbf{r} \cdot \mathbf{a} = \text{constant}$<br>
-                <iframe scrolling="no" title="likningplan3d" src="https://www.geogebra.org/material/iframe/id/kvwwgesx/width/500/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/false/sdz/true/ctl/false" width="500px" height="400px" style="border:0px;"> </iframe>
+                <a href='https://www.geogebra.org/classic/kvwwgesx' target='_blank'><h3>Likningen for et plan</h3></a>
+                <div class='container'>
+                    <div class='col'>
+                    Planet til høyre har <b>a</b> som normalvektor.<br>
+                    VC oppgir at likningen for planet er<br>
+                    $\mathbf{r} \cdot \mathbf{a} = \text{konstant}$<br>
+                    Hvorfor?
+                    </div>
+                    <div class='col'>
+                    <iframe scrolling="no" title="likningplan3d" data-src="https://www.geogebra.org/material/iframe/id/kvwwgesx/width/500/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/false/sdz/true/ctl/false" width="500px" height="400px" style="border:0px;"> </iframe>
+                    </div>
+                </div>
+                <p class='fragment'>$\mathbf{r} \cdot \mathbf{a}$ er lengden av <b>a</b> ganger lengden av <b>r</b> i retning av a (p i figuren). p er den samme for alle posisjonsvektorer i planet så derfor er $\mathbf{r} \cdot \mathbf{a}$ konstant.</p>
+                    
+                 
                 
             </section>
                         
             <section>
+                <section>
                     <h3>Øvingsoppgaver i Geogebra</h3>
                     <a href='https://geogebra.org/groups'>https://geogebra.org/groups</a>
                     <p>Bruk koden <font color='red'>Y8D23</font></p>
-                    
+                </section>
+                <section>
+                        <a href='https://geogebra.org/classic/vqnj5ncr' target='_blank'><h4>Liten applet som viser vektor addisjon</h4></a>
+                         <iframe scrolling="no" title="Vektor addisjon 2d" data-src="https://www.geogebra.org/material/iframe/id/vqnj5ncr/width/800/height/600/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/false/sdz/true/ctl/false" width="800px" height="600px" style="border:0px;"> </iframe>
+                 </section>
             </section>
 
             <section>
                 <section>
-                <h3>Kryss produkt</h3>
+                <a href='https://geogebra.org/classic/gxu29uvz' target='_blank'><h3>Kryss-produkt</h3></a>
                 $\vec{w} = \vec{u} \times \vec{v}$<br>
-                <iframe scrolling="no" title="kryssprodukt" src="https://www.geogebra.org/material/iframe/id/gxu29uvz/width/700/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/false/sdz/true/ctl/false" width="700px" height="400px" style="border:0px;"> </iframe>
+                <iframe scrolling="no" title="kryssprodukt" data-src="https://www.geogebra.org/material/iframe/id/gxu29uvz/width/700/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/false/sdz/true/ctl/false" width="700px" height="400px" style="border:0px;"> </iframe>
                 <br>
                 $|\vec{w}|=|\vec{u}||\vec{v}|\sin \alpha$
                 </section>
                 
                 <section>
-                    <h3>Mer om kryssprodukt</h3>
+                    <a href='https://geogebra.org/classic/fjbfss4e' target='_blank'><h3>Mer om kryss-produkt</h3></a>
                     <div class='container'>
                         <div class='col'>
-                        <iframe scrolling="no" title="enhetsvektorer" src="https://www.geogebra.org/material/iframe/id/fjbfss4e/width/500/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="500px" height="400px" style="border:0px;"> </iframe>
+                        <iframe scrolling="no" title="enhetsvektorer" data-src="https://www.geogebra.org/material/iframe/id/fjbfss4e/width/500/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="500px" height="400px" style="border:0px;"> </iframe>
                         </div>
                         <div class='col'>
                             Høyrehåndsregel
@@ -463,13 +411,13 @@
                 </section>
 
                 <section>
-                    <h3>Utledning av kryssprodukt</h3>
+                    <h3>Utledning av kryss-produkt</h3>
                     <p>
                     $
                     \vec{u} \times \vec{v} = (\red{u_x \mathbf{i}} + \green{u_y \mathbf{j}} +\blue{u_z \mathbf{k}}) \times (\red{v_x \mathbf{i}} + \green{v_y \mathbf{j}} +\blue{v_z \mathbf{k}})
                     $
                     </p>
-                    <div class='fragment'>
+                    <div class='fragment' data-fragment-index='1'>
                     $
                     \require{cancel}
                     \begin{split}
@@ -480,7 +428,8 @@
                     \end{split}
                     $
                     </div>
-                    <p style='zoom:0.5' class='fragment'>Ikke prøv å skrive av</p>
+                    <p class='fragment' data-fragment-index='1'>Bruker at kryss-produktet er distribuert ved addisjon<br> 
+                        $\vec{a} \times (\vec{b} + \vec{c}) = \vec{a} \times \vec{b} + \vec{a} \times \vec{c}$</p>
                     
                 </section>
 
@@ -569,7 +518,7 @@
                         <h3>Normalvektor til plan</h3>
                     </a>
                     <p>To vilkårlige vektorer i $\mathbb{R}^3$ spenner ut et plan</p>
-                    <iframe scrolling="no" title="Plan fra vektorer" src="https://www.geogebra.org/material/iframe/id/qnrypjg5/width/800/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/true/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="800px" height="500px" style="border:0px;"> </iframe>
+                    <iframe scrolling="no" title="Plan fra vektorer" data-src="https://www.geogebra.org/material/iframe/id/qnrypjg5/width/800/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/true/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="800px" height="500px" style="border:0px;"> </iframe>
                     
                 </section>
 
@@ -584,110 +533,8 @@
                     </ul>
                 </section>
 
-                <section>
-                    <h3>Rotasjon av fast legeme</h3>
-
-                </section>
-
             </section>
 
-            <section>
-                <section>
-                <h3>Derivasjon av vektorer</h3>
-                <p>Også komponentvis</p>
-                $
-                \begin{split}
-                \frac{d \vec{u}}{dt} &= \frac{d}{dt}\left(\red{u_x \mathbf{i}} + \green{u_y \mathbf{j}} +\blue{u_z \mathbf{k}} \right) \\
-                                     &= \frac{d u_x}{dt} \red{\mathbf{i}} + \frac{d u_y}{dt} \green{\mathbf{j}} + \frac{d u_z}{dt} \blue{\mathbf{k}}
-                \end{split}
-                $
-                <p>Siden enhetsvektorene er <u>uavhengige av tid</u></p>
-                </section>
-
-                <section>
-                <a href='https://www.geogebra.org/classic/gnnkn7dw' target='_blank'>
-                    <h3>Liten repetisjon av derivasjon</h3>
-                    
-                    $\frac{d f(x)}{dx}  \underset{\Delta x \to 0}{\approx} \frac{f(x+\Delta x) - f(x)}{\Delta x}$
-                    </a>
-                    <p></p>
-                    <iframe scrolling="no" title="Derivasjon av funksjon" src="https://www.geogebra.org/material/iframe/id/gnnkn7dw/width/800/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/true/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="800px" height="400px" style="border:0px;"> </iframe>
-                    
-                </section>
-
-                <section>
-                    <h4>Derivasjon av posisjonsvektor</h4>
-                <a href='https://www.geogebra.org/classic/aammuceg' target='_blank'>
-                $\vec{v} = \frac{d \vec{r}(t)}{dt}  \underset{\Delta t \to 0}{\approx} \frac{\vec{r}(t+\Delta t) - \vec{r}(t)}{\Delta t}$
-                </a>
-                <p></p>
-                <iframe scrolling="no" title="Derivasjon av posisjonsvektor" src="https://www.geogebra.org/material/iframe/id/aammuceg/width/800/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/true/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="800px" height="400px" style="border:0px;"> </iframe>
-                </section>
-
-                <section>
-                    <h4>Eksempel - partikkel som skytes i tyngdefeltet</h4>
-                    <p>Startfart = $v_0$ og retning $\alpha$ med x-axen</p>
-                    <div class='container'>
-                        <div class='col' style='zoom:0.8'>
-                            $
-                            \begin{split}
-                            \vec{r} &= (x, y) \\
-                             x &= v_0 \cos (\alpha) t \\
-                             y &= v_0 \sin (\alpha) t - \frac{1}{2}t^2 \\
-                             \vec{v} &= \frac{d \vec{r}}{dt}
-                             \end{split}
-                            $
-                        </div>
-                        <div class='col'>
-                            <img src='../figs/partikkelskytes.png' width=500>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <a href='https://www.geogebra.org/classic/pamdza65' target='_blank'>
-                        <h4>Partikkel som skytes i tyngdefeltet</h4>
-                    </a>
-                    <p>Eksempel fra GF 1.4</p>
-                    <iframe scrolling="no" title="Eksempel med partikkel som skytes" src="https://www.geogebra.org/material/iframe/id/pamdza65/width/800/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/true/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="800px" height="500px" style="border:0px;"> </iframe>
-                </section>
-
-            </section>
-
-            <section>
-                    <h4>Liten applet som viser vektor addisjon</h4>
-                    <iframe scrolling="no" title="Vektor addisjon 2d" src="https://www.geogebra.org/material/iframe/id/vqnj5ncr/width/800/height/600/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/false/sdz/true/ctl/false" width="800px" height="600px" style="border:0px;"> </iframe>
-            </section>
-               
-            <section>
-                <h3>Python</h3>
-                <div id="sagecell"><script type="text/x-sage">
-import numpy as np
-print(np.zeros(5))
-                </script>
-                </div>
-            </section>
-                
-            <section style='position:static;'>
-                    <h3>Triple produkt</h3>
-
-                    <div class='sagecell-sage'>
-                        <script type='text/x-sage'>
-import numpy as np 
-print(np.zeros(4))
-                        </script>
-                    </div>
-                    <!--pre class='thebelab-cell' data-executable="true" data-language="python">
-import numpy as np 
-import scipy as sp
-print(np.zeros(4))
-                    </!--pre-->
-                  
-            </section> 
-
-            <section>
-                    <iframe scrolling="yes" title="Vektor addisjon i 2D" src="https://www.geogebra.org/m/jmmdrnst" width="1478px" height="721px" style="border:0px;zoom:0.6;"> </iframe>
-                    
-            </section>
 
 			</div>
 
@@ -703,6 +550,7 @@ print(np.zeros(4))
 				progress: true,
 				center: true,
 				hash: true,
+                preloadIframes: true,
 
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
 				history: true,
@@ -719,6 +567,9 @@ print(np.zeros(4))
 					// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
 					config: 'TeX-AMS_HTML-full',
 					TeX: {
+                        autoload: {
+                            cancel: ['cancel']
+                        },
 						Macros: {
                             red: ['\\color{red}{#1}', 1],
                             green: ['\\color{green}{#1}', 1],
@@ -732,7 +583,6 @@ print(np.zeros(4))
 				dependencies: [
 				    { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/math/math.js', async: true },
 					{ src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/highlight/highlight.js', async: true },
 					{ src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/search/search.js', async: true },
 					{ src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/zoom-js/zoom.js', async: true },
