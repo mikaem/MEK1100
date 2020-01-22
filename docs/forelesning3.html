@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Forelesning 3</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+        <link rel="stylesheet" href="css/custom.css"> 
+
+        
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+                <section>
+                    <h3>Forelesning 3</h3>
+                </section>
+
+                <section>
+                    <section>
+                        <a href='https://geogebra.org/classic/ft6ssh9e' target='_blank'>
+                        <h3>Plane polarkoordinater</h3>
+                        </a>
+                        $$
+                        \begin{align*}
+                        x&=r \cos(\theta)\\
+                        y&=r \sin(\theta)
+                        \end{align*}
+                        $$
+                        <iframe scrolling="no" title="polar illustrasjon" src="https://www.geogebra.org/material/iframe/id/ft6ssh9e/width/600/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="600px" height="400px" style="border:0px;"> </iframe>
+
+                    </section>
+
+                    <section>
+                        <a href='https://geogebra.org/classic/zzqfwjaw' target='_blank'>
+                        <h3>Plane polarkoordinater</h3>
+                        </a>
+                        <iframe scrolling="no" title="polar" src="https://www.geogebra.org/material/iframe/id/zzqfwjaw/width/800/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="800px" height="500px" style="border:0px;"> </iframe>
+                    </section>
+                </section>
+
+                <section>
+
+                <section>
+                    <h4>Eksempel - partikkel som skytes i tyngdefeltet</h4>
+                    <p>Startfart = $v_0$ og retning $\alpha$ med x-axen</p>
+                    <div class='container'>
+                        <!--div class='col' style='zoom:0.8'>
+                            $
+                            \begin{split}
+                            \vec{r} &= x \red{\mathbf{i}} + z \blue{\mathbf{k}} \\
+                             x &= v_0 \cos (\alpha) t \\
+                             z &= v_0 \sin (\alpha) t - \frac{1}{2}gt^2 \\
+                             \vec{v} &= \frac{d \vec{r}}{dt}
+                             \end{split}
+                            $
+                        </!--div-->
+                        <div class='col'>
+                            $
+                            \vec{a} = -g \blue{\mathbf{k}}
+                            $
+                        </div>
+                        <div class='col'>
+                            <img data-src='figs/partikkelskytes.png' width=500>
+                        </div>
+                    </div>
+                </section>
+
+                <!--section>
+                    <h4>Eksempel - partikkel som skytes i tyngdefeltet</h4>
+                    <p style='float:left'>Posisjonsvektoren blir</p>
+                    <div style='zoom: 0.8;'>
+                    $
+                    \vec{r} = \left(v_0 \cos (\alpha) t\right) \red{\mathbf{i}} + \left(v_0 \sin (\alpha) t - \frac{1}{2}gt^2\right) \blue{\mathbf{k}}
+                    $
+                    </div>
+                    <p style='float:left'>og hastigheten blir</p><br>
+                    <div style='zoom: 0.8;'>
+                    $
+                    \begin{split}
+                        \frac{d \vec{r}}{dt} &= \frac{d \left(v_0 \cos (\alpha) t \right)}{dt} \mathbf{\red{i}} + \frac{d \left(v_0 \sin (\alpha) t - \frac{1}{2}gt^2\right)}{dt} \mathbf{\blue{k}}  \\
+                          &= v_0 \cos (\alpha)\, \mathbf{\red{i}} + \left(v_0 \sin (\alpha) - gt \right) \mathbf{\blue{k}}
+                    \end{split}
+                    $
+                    </div>
+                </!--section-->
+
+                <section>
+                    <a href='https://www.geogebra.org/classic/pamdza65' target='_blank'>
+                        <h4>Partikkel som skytes i tyngdefeltet</h4>
+                    </a>
+                    <p>Eksempel fra GF 1.4</p>
+                    <iframe scrolling="no" title="Eksempel med partikkel som skytes" data-src="https://www.geogebra.org/material/iframe/id/pamdza65/width/800/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/true/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="800px" height="500px" style="border:0px;"> </iframe>
+                </section>
+
+                </section>
+
+                <section>
+                    <section>
+                    <h3>Eksempel på skalarfelt</h3>
+                    <h4>Kapittel 1.5 i Gjevik</h4>
+                    <p>Et skalarfelt er en funksjon av rom og tid</p><br>
+                    $\beta = \beta(x, y, z, t)$ <br>
+                    <img data-src='figs/trykk.png' width=300>
+                    </section>
+                    <section>
+                        <h3>Implisitte flater</h3>
+                        $\beta(x, y, z) = \beta_0 = \text{konstant}$<br>
+                        <span class='fragment'><p>Kan finne $z$ som funksjon av $x, y$ og $\beta_0$</p></span><br>
+                        <span class='fragment'>$z = z(x, y, \beta_0)$</span> 
+                        
+                    </section>
+                    <section>
+                        <h3>For eksempel</h3>
+                        <div class=container>
+                            <div class='col' style='zoom: 0.8;'>
+                            $
+                            \begin{align*}
+                            x^2+y^2+z^2&=\beta_0\\
+                            \longrightarrow z &= \sqrt{\beta_0-x^2-y^2}
+                            \end{align*}
+                            $
+                        </div>
+                        <div class='col'>
+                            <iframe scrolling="no" title="Ekviskalarflate" src="https://www.geogebra.org/material/iframe/id/hpcfa5xp/width/600/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="600px" height="400px" style="border:0px;"> </iframe>
+                        </div>
+                        </div>
+                        <p>
+                            Forskjellige valg av $\beta_0$ gir forskjellige flater som kalles <b>ekviskalarflater</b>
+                            </p>
+                    </section>
+
+                    <section>
+                        <h3>Idealisert fjelltopp</h3>
+
+                        $
+                        z = \frac{h_0}{1+\frac{x^2+y^2}{R^2}} 
+                        $
+                        <iframe scrolling="no" title="Fjelltopp med kontourlinjer" src="https://www.geogebra.org/material/iframe/id/bksxa4d8/width/800/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="800px" height="500px" style="border:0px;"> </iframe>
+
+                    </section>
+                    
+
+                </section>
+
+                <section>
+                    <a href='https://geogebra.org/classic/sv6bqu3y' target='_blank'>
+                    <h3>Partiell derivasjon</h3>
+                    </a>
+                    <iframe scrolling="no" title="partiell derivasjon" src="https://www.geogebra.org/material/iframe/id/sv6bqu3y/width/1430/height/668/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1430px" height="668px" style="border:0px;"> </iframe>
+                </section>
+
+                <section>
+                    <h3>Øvingsoppgaver i Geogebra</h3>
+                    <a href='https://geogebra.org/groups'>https://geogebra.org/groups</a>
+                    <p>Bruk koden <font color='red'>Y8D23</font></p>
+                </section>
+
+            <!--section>
+                <h3>Python</h3>
+                <div id="sagecell"><script type="text/x-sage">
+import numpy as np
+print(np.zeros(5))
+                </script>
+                </div>
+            </!--section-->
+
+            <!--section style='position:static;'>
+                <h3>Import numpy</h3>
+
+                <div class='sagecell-sage'>
+                    <script type='text/x-sage'>
+import numpy as np 
+print(np.zeros(4))
+                    </script>
+                </div>
+              
+            </!--section--> 
+            
+        </div>
+
+        </div>
+        
+		<script src="js/reveal.js"></script>
+
+
+		<script>
+
+			Reveal.initialize({
+                controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+                preloadIframes: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				//history: true,
+				//width: '80%',
+				//height: '100%',
+				// Factor of the display size that should remain empty around the content
+				//margin: 0.1,
+
+				// Bounds for smallest/largest possible scale to apply to content
+				//minScale: 0.2,
+				//maxScale: 1.5,
+
+				math: {
+					// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full',
+					TeX: {
+						Macros: {
+                            red: ['\\color{red}{#1}', 1],
+                            green: ['\\color{green}{#1}', 1],
+                            blue: ['\\color{blue}{#1}', 1],
+							R: '\\mathbb{R}',
+							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+						}
+					}
+				},
+
+				dependencies: [
+                    { src: 'plugin/math/math.js', async: true },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true },
+                    { src: 'plugin/search/search.js', async: true },
+                    { src: 'plugin/zoom-js/zoom.js', async: true },
+                    { src: 'plugin/notes/notes.js', async: true }
+					]
+            });
+            
+
+		</script>
+
+	</body>
+</html>
