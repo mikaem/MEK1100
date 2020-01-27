@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Forelesning 4</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+        <link rel="stylesheet" href="css/custom.css"> 
+
+        
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+                <section>
+                    <h3>Forelesning 4</h3>
+                </section>
+
+                <section>
+                    <a href='https://geogebra.org/classic/sv6bqu3y' target='_blank'>
+                    <h3>Partiell derivasjon og Taylor serier</h3>
+                    <h4>En illustrasjon</h4>
+                    </a>
+                    <iframe scrolling="no" title="partiell derivasjon" src="https://www.geogebra.org/material/iframe/id/sv6bqu3y/width/1430/height/668/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1430px" height="668px" style="border:0px;"> </iframe>
+                </section>
+            
+        </div>
+
+        </div>
+        
+		<script src="js/reveal.js"></script>
+
+
+		<script>
+
+			Reveal.initialize({
+                controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+                preloadIframes: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				//history: true,
+				//width: '80%',
+				//height: '100%',
+				// Factor of the display size that should remain empty around the content
+				//margin: 0.1,
+
+				// Bounds for smallest/largest possible scale to apply to content
+				//minScale: 0.2,
+				//maxScale: 1.5,
+
+				math: {
+					// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full',
+					TeX: {
+						Macros: {
+                            red: ['\\color{red}{#1}', 1],
+                            green: ['\\color{green}{#1}', 1],
+                            blue: ['\\color{blue}{#1}', 1],
+							R: '\\mathbb{R}',
+							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+						}
+					}
+				},
+
+				dependencies: [
+                    { src: 'plugin/math/math.js', async: true },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true },
+                    { src: 'plugin/search/search.js', async: true },
+                    { src: 'plugin/zoom-js/zoom.js', async: true },
+                    { src: 'plugin/notes/notes.js', async: true }
+					]
+            });
+            
+
+		</script>
+
+	</body>
+</html>
