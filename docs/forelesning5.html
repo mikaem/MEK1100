@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Forelesning 29/1-2020</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+        <link rel="stylesheet" href="css/custom.css"> 
+
+        
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+                <section>
+                    <h3>Forelesning 29/1-2020</h3>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Skalarfelt og implisitte flater</h3>
+                        <div class='container'>
+                        <div class='col'>
+                            <p>Gitt en funksjon $f(x,y)$:</p>
+                            $f(x,y) = x^2+y^2-\beta_0$
+                            <p>Geogebra plotter som at $f(x,y)=z$</p><br>
+                        </div>
+                        <div class='col'>
+                            <iframe scrolling="no" title="Funksjon av to variable" src="https://www.geogebra.org/material/iframe/id/uq6hhmu8/width/600/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/true/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="600px" height="400px" style="border:0px;"> </iframe>
+                        </div>
+                        </div>
+                        <p class='fragment'><u>Ekviskalarflate</u> $\longrightarrow \beta(x,y,z)=z-f(x,y)=0$</p>
+                    </section>
+                    <section>
+                        <h3>Annet eksempel</h3>
+                        <div class=container>
+                            <div class='col' style='zoom: 0.8;'>
+                            $
+                            \begin{align*}
+                            \beta(x,y,z) &= x^2+y^2+z^2 =\beta_0\\
+                            \longrightarrow z &= \sqrt{\beta_0-x^2-y^2}
+                            \end{align*}
+                            $
+                        </div>
+                        <div class='col'>
+                            <iframe scrolling="no" title="Ekviskalarflate" src="https://www.geogebra.org/material/iframe/id/hpcfa5xp/width/600/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="600px" height="400px" style="border:0px;"> </iframe>
+                        </div>
+                        </div>
+                        <p>
+                          Vi kan mao finne $z$ fra $x, y$ og $\beta_0$.    
+                        </p>
+                    </section>
+
+                    <section>
+                        <a href='https://geogebra.org/classic/bksxa4d8'>
+                        <h3>Idealisert fjelltopp</h3>
+                        </a>
+                        $
+                        \beta(x,y,z) = z - \frac{h_0}{1+\frac{x^2+y^2}{R^2}} = 0
+                        $
+                        <iframe scrolling="no" title="Fjelltopp med kontourlinjer" src="https://www.geogebra.org/material/iframe/id/bksxa4d8/width/800/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="800px" height="500px" style="border:0px;"> </iframe>
+                    </section>    
+                    
+                </section>
+
+                <section>
+                    <a href='https://www.geogebra.org/classic/fm9fbc6s' target='_blank'>
+                    <h4>Gradienten til et skalarfelt står normal på ekviskalarflater</h4>
+                    </a>
+                    <div class='container'>
+                    <div class='col' style='zoom: 0.8;'>
+                    $
+                    \begin{align*}
+                     f(x,y) &= x^2+y^2-\beta_0 \\
+                     \beta(x,y,z) &= z - f(x, y) \\
+                     \nabla \beta &= -\frac{\partial f}{\partial x} \red{\mathbf{i}} - \frac{\partial f}{\partial y} \green{\mathbf{j}} + \blue{\mathbf{k}}\\
+                     \vec{n} &= \frac{\nabla \beta}{|\nabla \beta|}
+                     \end{align*}
+                    $
+                    </div>
+                    <div class='col'>
+                        <iframe scrolling="no" title="gradient beta" src="https://www.geogebra.org/material/iframe/id/fm9fbc6s/width/600/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="600px" height="400px" style="border:0px;"> </iframe>
+                    </div>
+                    </div>
+                </section>
+            
+        </div>
+
+        </div>
+        
+		<script src="js/reveal.js"></script>
+
+
+		<script>
+
+			Reveal.initialize({
+                controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+                preloadIframes: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				//history: true,
+				//width: '80%',
+				//height: '100%',
+				// Factor of the display size that should remain empty around the content
+				//margin: 0.1,
+
+				// Bounds for smallest/largest possible scale to apply to content
+				//minScale: 0.2,
+				//maxScale: 1.5,
+
+				math: {
+					// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full',
+					TeX: {
+						Macros: {
+                            red: ['\\color{red}{#1}', 1],
+                            green: ['\\color{green}{#1}', 1],
+                            blue: ['\\color{blue}{#1}', 1],
+							R: '\\mathbb{R}',
+							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+						}
+					}
+				},
+
+				dependencies: [
+                    { src: 'plugin/math/math.js', async: true },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true },
+                    { src: 'plugin/search/search.js', async: true },
+                    { src: 'plugin/zoom-js/zoom.js', async: true },
+                    { src: 'plugin/notes/notes.js', async: true }
+					]
+            });
+            
+
+		</script>
+
+	</body>
+</html>
