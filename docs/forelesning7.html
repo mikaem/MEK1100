@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Forelesning 5/2-2020</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+        <link rel="stylesheet" href="css/custom.css"> 
+
+        
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+                <section>
+                    <h3>Forelesning 5/2-2020</h3>
+                </section>
+
+                <section>
+                    <a href='https://geogebra.org/classic/wdvymy6q' target='_blank'>
+                    <h4>Topptur</h4>
+                    </a>
+                    <iframe scrolling="no" title="Topptur" src="https://www.geogebra.org/material/iframe/id/wdvymy6q/width/800/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/true/sdz/true/ctl/false" width="800px" height="500px" style="border:0px;"> </iframe>
+                </section>
+
+                <section>
+                    <a href='https://www.geogebra.org/classic/rskbr3j3' target='_blank'>
+                    <h4>Kurveintegral</h4>
+                    </a>
+                    <iframe scrolling="no" title="Kurveintegral" src="https://www.geogebra.org/material/iframe/id/rskbr3j3/width/800/height/500/border/888888/sfsb/true/smb/true/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/true/sdz/true/ctl/false" width="800px" height="500px" style="border:0px;"> </iframe>
+                    
+                </section>
+
+            
+        </div>
+
+        </div>
+        
+		<script src="js/reveal.js"></script>
+
+
+		<script>
+
+			Reveal.initialize({
+                controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+                preloadIframes: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				//history: true,
+				//width: '80%',
+				//height: '100%',
+				// Factor of the display size that should remain empty around the content
+				//margin: 0.1,
+
+				// Bounds for smallest/largest possible scale to apply to content
+				//minScale: 0.2,
+				//maxScale: 1.5,
+
+				math: {
+					// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full',
+					TeX: {
+						Macros: {
+                            red: ['\\color{red}{#1}', 1],
+                            green: ['\\color{green}{#1}', 1],
+                            blue: ['\\color{blue}{#1}', 1],
+							R: '\\mathbb{R}',
+							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+						}
+					}
+				},
+
+				dependencies: [
+                    { src: 'plugin/math/math.js', async: true },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true },
+                    { src: 'plugin/search/search.js', async: true },
+                    { src: 'plugin/zoom-js/zoom.js', async: true },
+                    { src: 'plugin/notes/notes.js', async: true }
+					]
+            });
+            
+
+		</script>
+
+	</body>
+</html>
